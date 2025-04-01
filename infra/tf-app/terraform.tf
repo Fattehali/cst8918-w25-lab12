@@ -21,6 +21,7 @@ terraform {
     container_name = "tfstate"
 
     key = "prod.app.tfstate"
+    use_oidc = true
 
   }
 
@@ -31,6 +32,7 @@ terraform {
 provider "azurerm" {
 
   features {}
+  use_oidc = true
 
 }
 
