@@ -20,7 +20,7 @@ terraform {
 
     container_name = "tfstate"
 
-    key = "prod.app.tfstate"
+    key      = "prod.app.tfstate"
     use_oidc = true
 
   }
